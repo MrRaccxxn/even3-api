@@ -1,7 +1,7 @@
 import app from "./app";
 import "./database";
 
-const PORT = 3000;
+const PORT = 8080;
 
 app.listen(PORT, () => {
   console.log(`server on port ${PORT}`);
