@@ -1,16 +1,16 @@
 import { Router } from "express";
 import * as videoController from "../controllers/video.controller";
 
-const router = Router();
+const videoRouter = Router();
 
-router.post("/videos", videoController.createVideo);
+videoRouter.get("/", videoController.getVideos);
 
-router.put("/videos/:id", videoController.editVideo);
+videoRouter.post("/", videoController.createVideo);
 
-router.delete("/videos/:id", videoController.deleteVideo);
+videoRouter.put("/:id", videoController.editVideo);
 
-router.get("/videos", videoController.getVideos);
+videoRouter.delete("/:id", videoController.deleteVideo);
 
-router.get("/videos/:id", videoController.getVideo);
+videoRouter.get("/:id", videoController.getVideo);
 
-export default router;
+export default videoRouter;
