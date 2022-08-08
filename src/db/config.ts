@@ -1,4 +1,5 @@
-import { Dialect, Sequelize } from 'sequelize'
+require('dotenv').config()
+import { Dialect, Sequelize } from "sequelize"
 
 const dbName = process.env.DB_NAME as string
 const dbUser = process.env.DB_USER as string

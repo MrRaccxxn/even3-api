@@ -1,7 +1,7 @@
 import { Op } from 'sequelize'
-
-import Event, { EventInput, EventOuput } from '../../models/event'
+import { EventInput, EventOuput } from '../../models/event'
 import { GetAllEventsFilters } from './event.types'
+import Event from "../../models/event"
 
 export const create = async (payload: EventInput): Promise<EventOuput> => {
     const event = await Event.create(payload)

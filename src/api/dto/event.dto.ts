@@ -1,4 +1,4 @@
-import { Optional } from "sequelize/types"
+import { Optional } from "sequelize/types";
 
 export type CreateEventDTO = {
     title: string;

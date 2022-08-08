@@ -1,6 +1,6 @@
-import { DataTypes, Model, Optional } from "sequelize/types"
-import sequelizeConnection from "../config"
 
+import { DataTypes, Model, Optional } from "sequelize"
+import sequelizeConnection from "../config"
 interface EventAttributes {
     id: number
     title: string
